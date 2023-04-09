@@ -25,7 +25,7 @@ public class Login {
                 String name = res.getString(4);
 
                 if(accountNumber == account_number && passwordString.equals(pass)){
-                    Main.isLogged = true;
+                    Main.logged = true;
                     Main.welcomeMessageForLoggedUser = "Welcome %s!\n\n Account number: %d\n Balance: %.2f\n\n";
                     Main.accountNumber = account_number;
                     Main.accounBalance = balance;
@@ -47,6 +47,6 @@ public class Login {
             e.printStackTrace();
         }
         
-        Main.main(null);
+        Main.isLogged();
     }
 }

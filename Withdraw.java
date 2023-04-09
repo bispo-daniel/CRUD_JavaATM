@@ -16,16 +16,16 @@ public class Withdraw {
             ResultSet res = stt.executeQuery(sql);
 
             while (res.next()) {
-                int id = res.getInt(1);
+                int account_number = res.getInt(1);
                 double currentBalance = res.getDouble("balance");
 
-                if(accountNumber == id){
+                if(accountNumber == account_number){
                     if(withdrawValue <= currentBalance){
                         double newBalanceValue = currentBalance - withdrawValue;
                         String updateBalance = "UPDATE account SET balance = ? WHERE id = ?";
                         PreparedStatement preparedStatement = Connect.connection.prepareStatement(updateBalance);
                         preparedStatement.setDouble(1, newBalanceValue);
-                        preparedStatement.setInt(2, id);
+                        preparedStatement.setInt(2, account_number);
                         int response = preparedStatement.executeUpdate();
                         if(response > 0){
                             Main.accounBalance = newBalanceValue;
@@ -41,6 +41,6 @@ public class Withdraw {
             e.printStackTrace();
         }
 
-        Main.main(null);
+        Main.isLogged();
     }
 }

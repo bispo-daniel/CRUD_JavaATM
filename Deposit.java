@@ -15,10 +15,10 @@ public class Deposit {
             ResultSet res = stt.executeQuery(sql);
 
             while(res.next()){
-                int id = res.getInt(1);
+                int account_number = res.getInt(1);
                 double currentBalance = res.getDouble("balance");
 
-                if(id == accountNumber){
+                if(account_number == accountNumber){
                     double newBalance = currentBalance + depositValue;
                     String setNewBalance = "UPDATE account SET balance = ? WHERE id = %d";
                     String formattedString = String.format(setNewBalance, accountNumber);
@@ -39,6 +39,6 @@ public class Deposit {
             e.printStackTrace();
         }
 
-        Main.main(null);
+        Main.isLogged();
     }
 }

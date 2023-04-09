@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Menu {
+public class UserMenu {
     static void menu(String displayMessage, int accountNumber){
         String functionsString = "What do you want to do?\n 1) Transfer\n 2) Withdraw\n 3) Deposit\n 0) Exit account";
         String optionString = JOptionPane.showInputDialog(null, displayMessage.concat(functionsString));
@@ -8,11 +8,11 @@ public class Menu {
 
         switch(option){
             case 0:
-                Main.isLogged = false;
+                Main.logged = false;
                 Main.landingPage();
                 break;
             case 1:
-                Transfer.tranfer();
+                Transfer.tranfer(accountNumber);
                 break;
             case 2:
                 Withdraw.withdraw(accountNumber);
