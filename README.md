@@ -38,7 +38,7 @@ https://github.com/bispo-daniel/SQL_Scripts/tree/main/atmDB
 
 # Screenshots
 ## `Landing page`
-![all-text](https://github.com/bispo-daniel/CRUD_JavaATM/blob/main/LandingPageScreenshot.png)
+![all-text](https://github.com/bispo-daniel/CRUD_JavaATM/blob/main/Screenshots/LandingPageScreenshot.png)
 
 ## `User page`
-![all-text](https://github.com/bispo-daniel/CRUD_JavaATM/blob/main/UserPageScreenshot.png)
+![all-text](https://github.com/bispo-daniel/CRUD_JavaATM/blob/main/Screenshots/UserPageScreenshot.png)
