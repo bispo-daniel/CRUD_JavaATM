@@ -15,15 +15,15 @@ Note: There is still functions to be developed, such as update and delete, to ac
 I have learned about the referenced library MySQL Connector J;
 
 I have learned the basic imports to connect to a database with jdbc
-    [x]Connection;
-    [x]DriverManager;
+    -[x]Connection;
+    -[x]DriverManager;
 
 I have learned the basic import to execute a statement with parameters in a database with jdbc
-    [x]PreparedStatement;
+    -[x]PreparedStatement;
     
 I have learned about the basic import to execute a simple query in the database with jdbc
-    [x]Statement;
-    [x]ResultSet;
+    -[x]Statement;
+    -[x]ResultSet;
 
 To create the login functionality was a real cool challenge to solve, because i had to think about the state and tests to make the functionality properly work. Passing the welcome message was cool incrementation.
 
