@@ -25,7 +25,9 @@
         Statement;
         ResultSet;
 
-    To create the login functionality was a real cool challenge to solve, because i had to think about the state and tests to make the functionality properly work. Passing the welcome message was cool incrementation.
+    To create the login functionality was a real cool challenge to solve, 
+    because i had to think about the state and tests to make the functionality properly work. 
+    Passing the welcome message was cool incrementation.
 
     At first, faced some issues not importing the J connector.
 
