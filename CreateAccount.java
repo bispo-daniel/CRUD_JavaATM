@@ -30,7 +30,14 @@ public class CreateAccount {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            if (e.getErrorCode() == 1062) {
+                JOptionPane.showMessageDialog(null, "This account number has already been taken...");                
+            } else if(e.getErrorCode() == 1452){
+                JOptionPane.showMessageDialog(null, "This customer does not exist");
+            } else {
+                e.printStackTrace();
+                System.out.println(e.getErrorCode());
+            }
         }
 
         Main.landingPage();
