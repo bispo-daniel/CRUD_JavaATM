@@ -1,8 +1,8 @@
 import javax.swing.JOptionPane;
 
 public class UserMenu {
-    static void menu(String displayMessage, int accountNumber){
-        String functionsString = "What do you want to do?\n 1) Transfer\n 2) Withdraw\n 3) Deposit\n 0) Exit account";
+    static void menu(String displayMessage, int accountNumber) {
+        String functionsString = "What do you want to do?\n 1) Transfer\n 2) Withdraw\n 3) Deposit\n 4) Update account\n 5) Delete account\n 0) Exit account";
         String optionString = JOptionPane.showInputDialog(null, displayMessage.concat(functionsString));
         int option = Integer.parseInt(optionString);
 
@@ -19,6 +19,16 @@ public class UserMenu {
                 break;
             case 3:
                 Deposit.deposit(accountNumber);
+                break;
+            case 4:
+                UpdateAccount.options(accountNumber);
+                break;
+            case 5:
+                DeleteAccount.delete(accountNumber);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Type a valid option");
+                menu(displayMessage, accountNumber);
         }
     }
 }

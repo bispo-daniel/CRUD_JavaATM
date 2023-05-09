@@ -25,12 +25,6 @@ public class Main {
             case 3:
                 CreateAccount.createAccountFunction();
                 break;
-            // case 4:
-            //     Delete.delete("customer");
-            //     break;
-            // case 5:
-            //     Delete.delete("account");
-            //     break;
             default:
                 JOptionPane.showMessageDialog(null, "Type a valid option...");
                 landingPage();

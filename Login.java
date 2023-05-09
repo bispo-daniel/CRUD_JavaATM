@@ -37,7 +37,7 @@ public class Login {
             }
 
             if(found == false){
-                JOptionPane.showMessageDialog(null, "Conta não encontrada");
+                JOptionPane.showMessageDialog(null, "Account not found");
             }
 
             //Reseting the variable
